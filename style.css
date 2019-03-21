@@ -1,0 +1,236 @@
+/*
+File Name: style.css
+Date: 03/15/19
+Programmer: Joe Vaughn
+*/
+/* MOBILE STYLES */
+/* colors */
+/* sizes */
+/* margins */
+/* font families */
+/* borders */
+/* SELECTORS */
+body {
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  color: #110c11;
+  line-height: 1.5em;
+  background-color: #ffffff;
+  font-size: 16px;
+  margin: 0 1em;
+}
+header {
+  background-color: #4A2605;
+  top: 0;
+  width: 100%;
+  max-height: 20%;
+}
+.hamburger {
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #ffffff;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.cross {
+  padding: 7px 15px 0px 15px;
+  color: #ffffff;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+a {
+  text-decoration: none;
+  color: #110c11;
+}
+a:hover {
+  text-decoration: underline;
+  color: #060C24;
+}
+#tab-nav-bar {
+  display: inline-block;
+  background-color: #4A2605;
+  width: 100%;
+}
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 1.25em;
+  width: 100%;
+  background: #4A2605;
+  text-align: center;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  font-size: 1.25em;
+  display: block;
+  padding: 0.25em;
+  border-bottom: #dddddd 1px solid;
+}
+.menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 0.5em;
+  border-bottom: #dddddd 1px solid;
+}
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #666;
+}
+.menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #666;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #666;
+}
+#main-utilities {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #4A2605;
+}
+img {
+  border: 1.5px inset #4A2605;
+  max-width: 100%;
+  height: auto;
+}
+.recent-image {
+  max-width: 100%;
+  height: auto;
+}
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+button {
+  line-height: 2em;
+  font-size: 1.2em;
+  background-color: #4A2605;
+  color: #e7e7e7;
+  border: 4px inset #4A2605;
+  padding: 0.75em 3em;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+p {
+  margin: 1em 0.75em 1.5em 0.75em;
+  font-family: Roboto, sans-serif;
+}
+#heading {
+  font-family: Tinos, Montserrat, serif;
+  line-height: 1.5em;
+  font-size: 3em;
+  color: white;
+}
+.title-line span {
+  display: inline;
+}
+h2,
+h3,
+h4 {
+  border-bottom: 2px solid #4A2605;
+}
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+  text-shadow: 1px 1px #060C24;
+  line-height: 2em;
+  font-family: Tinos, Montserrat, serif;
+  max-width: 100%;
+  background-color: #4A2605;
+}
+h2 {
+  margin: 1em 0.75em 1.5em 0.75em;
+  font-weight: bold;
+  font-size: 2.625em;
+  font-family: Tinos, Montserrat, serif;
+}
+h3 {
+  margin: 1em 0.75em 1.5em 0.75em;
+  font-weight: bold;
+  font-size: 2.275em;
+  font-family: Montserrat, serif;
+}
+h4 {
+  margin: 1em 0.75em 1.5em 0.75em;
+  font-weight: bold;
+  font-size: 1.925em;
+  font-family: Montserrat, serif;
+}
+main {
+  margin-top: 1.5em;
+  padding-top: 0.5em;
+}
+.feature,
+#recent-posts,
+#user-created-posts {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.recent-article,
+.user-post,
+.recipe-posts {
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+recent-article p,
+user-post p {
+  padding-top: 0.5em;
+}
+footer {
+  margin-bottom: 10px;
+  font-family: "Fira Mono";
+  text-align: center;
+}
+#site-index li {
+  display: inline;
+  font-size: 14px;
+  line-height: 1.25em;
+  text-decoration: underline;
+}
+/* Tablet CSS code and up */
+@media only screen and (min-width: 481px) {
+  body {
+    font-size: 17.6px;
+    width: 100%;
+  }
+  h1 {
+    position: relative;
+  }
+  .recent-article,
+  .user-post {
+    display: inline-block;
+    width: 40%;
+    margin-left: 0.5em;
+    margin-right: 1em;
+    padding: 1em;
+  }
+  #tab-nav-bar {
+    display: inline-block;
+  }
+}
